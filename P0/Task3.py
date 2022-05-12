@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
         # mobile numbers
         elif ' ' in c and c[0] in mobile_prefixes:
-            callees.add(c[0])
+            callees.add(c[0:4])
 
         # fixed lines
         elif c[0] == '(' and ')' in c:
